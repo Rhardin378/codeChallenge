@@ -32,9 +32,11 @@ const findSum = function(array) {
 };
   
   const isPalindrome = function(str) {
-    return (str.split().reverse().join(''))
+      if(str.split("").reverse().join('') === str) {
+          return true
+      } else { 
+          return false }
   };
-
   
   const largestPair = function(array) {
     let productArray = []
